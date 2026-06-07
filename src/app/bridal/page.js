@@ -1,8 +1,8 @@
 import Bridal from '@/components/Bridal';
 
 export const metadata = {
-  title: 'Bridal Packages | Your Salon Name',
-  description: 'Premium bridal packages and pre-wedding styling by expert artists at Your Salon Name.',
+  title: 'Bridal Packages | Studio Fix – Amar Colony, Delhi',
+  description: 'Premium bridal makeup by Tanvi Singh at Studio Fix, Delhi. Pre-bridal prep to wedding day looks. Call +91 70420 44784.',
 };
 
 export default function BridalPage() {

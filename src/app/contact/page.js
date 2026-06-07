@@ -3,8 +3,8 @@ import BookingForm from '@/components/BookingForm';
 import FAQ from '@/components/FAQ';
 
 export const metadata = {
-  title: 'Contact Us | Your Salon Name',
-  description: 'Book an appointment, view our location, or get answers to frequently asked questions.',
+  title: 'Contact Us | Studio Fix – Amar Colony, Delhi',
+  description: 'Book an appointment at Studio Fix salon in Amar Colony, Delhi. Call +91 70420 44784 or WhatsApp us.',
 };
 
 export default function ContactPage() {

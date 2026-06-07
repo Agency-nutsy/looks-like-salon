@@ -1,8 +1,8 @@
 import Services from '@/components/Services';
 
 export const metadata = {
-  title: 'Our Services | Your Salon Name',
-  description: 'Explore our wide range of premium salon services including haircuts, styling, keratin, facials, and more.',
+  title: 'Our Services | Studio Fix – Amar Colony, Delhi',
+  description: 'Explore services at Studio Fix: bridal makeup, haircuts, balayage, keratin, facials, nail art & more. Rated 4.4★ on Google.',
 };
 
 export default function ServicesPage() {

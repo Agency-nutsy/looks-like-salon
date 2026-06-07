@@ -1,8 +1,8 @@
 import Team from '@/components/Team';
 
 export const metadata = {
-  title: 'Our Team | Your Salon Name',
-  description: 'Meet the expert stylists and beauty professionals at Your Salon Name.',
+  title: 'Our Team | Studio Fix – Amar Colony, Delhi',
+  description: 'Meet Tanvi Singh, David, Rajesh, Gazal and the expert team at Studio Fix salon in Delhi.',
 };
 
 export default function TeamPage() {

@@ -2,20 +2,17 @@
 import { useState } from 'react';
 import styles from './Gallery.module.css';
 
-/* TEMPLATE: Replace with actual salon portfolio images and captions */
 const images = [
-  { src: 'https://images.unsplash.com/photo-1562322140-8baeacacf3df?w=600&q=80', alt: 'Salon styling chair with premium leather finish', cat: 'Interior', caption: 'Premium Styling Station' },
-  { src: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80', alt: 'Elegant salon interior with warm ambient lighting', cat: 'Interior', caption: 'Warm Ambient Interior' },
-  { src: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&q=80', alt: 'Professional hairstyling in progress', cat: 'Transformations', caption: 'Balayage + Keratin Treatment' },
-  { src: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80', alt: 'Professional makeup application for a client', cat: 'Transformations', caption: 'Bridal Makeup — Reception Look' },
-  { src: 'https://images.unsplash.com/photo-1470259078422-826894b933aa?w=600&q=80', alt: 'Expert nail care and nail art session', cat: 'Team at Work', caption: 'Custom Nail Art Design' },
-  { src: 'https://images.unsplash.com/photo-1620454955651-2e7d5a6c9e83?w=600&q=80', alt: 'Vibrant hair colour transformation', cat: 'Transformations', caption: 'Global Hair Colour — Copper Tones' },
-  { src: 'https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=600&q=80', alt: 'Skilled barber providing grooming services', cat: 'Team at Work', caption: "Men's Precision Cut & Styling" },
-  { src: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=80', alt: 'Relaxing facial treatment experience', cat: 'Team at Work', caption: 'Gold Facial Treatment' },
-  { src: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=80', alt: 'Spa massage bed in a serene setting', cat: 'Interior', caption: 'Spa & Wellness Area' },
-  { src: 'https://images.unsplash.com/photo-1551772412-c2e5a70e9afd?w=600&q=80', alt: 'Body treatment and waxing service area', cat: 'Interior', caption: 'Body Treatment Room' },
-  { src: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80', alt: 'Stunning bridal makeup transformation', cat: 'Transformations', caption: 'Bridal Makeup — HD Airbrush' },
-  { src: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&q=80', alt: 'Classic barber shop setup with professional tools', cat: 'Team at Work', caption: 'Classic Barber Setup' },
+  { src: '/salon/reception-desk.jpg', alt: 'Studio Fix reception area with crystal chandelier and marble counter, Amar Colony Delhi', cat: 'Interior', caption: 'Reception & Welcome Area' },
+  { src: '/salon/hero-interior.png', alt: 'Studio Fix interior with styling chairs and wash basins in Delhi', cat: 'Interior', caption: 'Styling & Wash Stations' },
+  { src: '/salon/styling-stations.png', alt: 'Gold-framed mirrors and premium styling stations at Studio Fix', cat: 'Interior', caption: 'Premium Styling Stations' },
+  { src: '/salon/interior-wide.png', alt: 'Elegant wide view of Studio Fix salon interior with arched decor', cat: 'Interior', caption: 'Salon Ambience' },
+  { src: '/salon/bridal-makeup.png', alt: 'Bridal makeup session at Studio Fix by Tanvi Singh, Delhi', cat: 'Transformations', caption: 'Bridal Makeup by Tanvi Singh' },
+  { src: '/salon/hair-styling.png', alt: 'Professional hair coloring and balayage at Studio Fix, Delhi', cat: 'Transformations', caption: 'Balayage Hair Colour' },
+  { src: '/salon/keratin-treatment.png', alt: 'Keratin treatment results at Studio Fix salon, Delhi', cat: 'Transformations', caption: 'Keratin Smoothening' },
+  { src: '/salon/facial-treatment.png', alt: 'Relaxing facial treatment at Studio Fix, Amar Colony Delhi', cat: 'Team at Work', caption: 'Gold Facial Treatment' },
+  { src: '/salon/nail-art.png', alt: 'Nail art and nail extensions at Studio Fix, Delhi', cat: 'Team at Work', caption: 'Custom Nail Art Design' },
+  { src: '/salon/pedicure-service.png', alt: 'Professional pedicure and foot spa at Studio Fix, Delhi', cat: 'Team at Work', caption: 'Luxury Pedicure & Foot Spa' },
 ];
 
 const tabs = ['All', 'Interior', 'Transformations', 'Team at Work'];
@@ -40,7 +37,6 @@ export default function Gallery() {
     <section id="gallery" className={`section ${styles.gallery}`}>
       <div className="container">
         <div className="section-header" data-aos="fade-up">
-          {/* TEMPLATE: Replace with salon name */}
           <span className="section-label">OUR PORTFOLIO</span>
           <h2 className="section-title">A Space Built for <span className="gold-text">Beauty</span></h2>
         </div>

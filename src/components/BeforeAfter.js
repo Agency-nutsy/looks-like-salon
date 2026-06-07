@@ -2,17 +2,16 @@
 import { useState, useRef, useCallback } from 'react';
 import styles from './BeforeAfter.module.css';
 
-/* TEMPLATE: Replace with actual before/after transformation images */
 const transformations = [
   {
-    before: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80',
-    after: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80',
-    label: 'Bridal Transformation',
+    before: '/salon/bridal-makeup-before.png',
+    after: '/salon/bridal-makeup.png',
+    label: 'Bridal Makeup Transformation',
   },
   {
-    before: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&q=80',
-    after: 'https://images.unsplash.com/photo-1560869713-7d0a29430803?w=800&q=80',
-    label: 'Balayage Colour',
+    before: '/salon/hair-styling.png',
+    after: '/salon/keratin-treatment.png',
+    label: 'Hair Makeover — Keratin & Colour',
   },
 ];
 
@@ -49,11 +48,11 @@ function Slider({ before, after, label }) {
         onTouchEnd={onMouseUp}
       >
         {/* After image (full width, behind) */}
-        <img src={after} alt="After transformation" style={{ zIndex: 1 }} />
+        <img src={after} alt="After transformation at Studio Fix" style={{ zIndex: 1 }} />
 
         {/* Before image (clipped) */}
         <div style={{ position: 'absolute', top: 0, left: 0, width: `${position}%`, height: '100%', overflow: 'hidden', zIndex: 2 }}>
-          <img src={before} alt="Before transformation" style={{ width: containerRef.current ? containerRef.current.offsetWidth + 'px' : '100%', maxWidth: 'none', height: '100%', objectFit: 'cover' }} />
+          <img src={before} alt="Before transformation at Studio Fix" style={{ width: containerRef.current ? containerRef.current.offsetWidth + 'px' : '100%', maxWidth: 'none', height: '100%', objectFit: 'contain' }} />
         </div>
 
         {/* Slider line */}
@@ -76,7 +75,7 @@ export default function BeforeAfter() {
         <div className="section-header" data-aos="fade-up">
           <span className="section-label">REAL RESULTS</span>
           <h2 className="section-title">See the <span className="gold-text">Transformation</span></h2>
-          <p className="section-subtitle">Drag the slider to see real before & after results from our salon.</p>
+          <p className="section-subtitle">Drag the slider to see real before & after results from Studio Fix.</p>
         </div>
 
         <div className={styles.grid} data-aos="fade-up">

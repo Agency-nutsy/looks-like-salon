@@ -1,32 +1,31 @@
 'use client';
 import styles from './Bridal.module.css';
 
-/* TEMPLATE: Replace with actual bridal package details */
 const packages = [
   {
     name: 'The Radiance Package',
     subtitle: 'Pre-Bridal Prep',
-    price: '₹12,000',
+    price: 'Price on request',
     tag: 'Most Popular',
     duration: '30 days before wedding',
     items: [
       '4 Pre-bridal facials',
       'Full body D-Tan (2 sessions)',
-      'Eyebrow shaping + threading (3 times)',
+      'Eyebrow shaping + threading',
       'Manicure + Pedicure (2 sessions)',
-      'Waxing (full body, 2 sessions)',
+      'Full body waxing (2 sessions)',
     ],
     highlighted: false,
   },
   {
     name: 'The Golden Bride',
     subtitle: 'Complete Bridal',
-    price: '₹22,000',
+    price: 'Price on request',
     tag: '⭐ Premium Pick',
     duration: '45-day complete package',
     items: [
       'Everything in Radiance Package',
-      'Bridal Makeup (HD Airbrush)',
+      'Bridal Makeup (HD/Airbrush by Tanvi Singh)',
       'Saree/Lehenga Draping',
       'Hair Styling (bridal updo or open style)',
       'Mehendi Function Makeup',
@@ -38,12 +37,12 @@ const packages = [
   {
     name: 'The Royal Experience',
     subtitle: 'Luxury All-Inclusive',
-    price: '₹35,000',
+    price: 'Price on request',
     tag: 'Full Experience',
     duration: '60-day luxury journey',
     items: [
       'Everything in Golden Bride',
-      'Keratin/Smoothening treatment',
+      'Keratin/Nanoplastia treatment',
       '6 Gold Facials',
       'Body Polishing (2 sessions)',
       'Groom Grooming Package',
@@ -54,20 +53,19 @@ const packages = [
 ];
 
 const features = [
-  "🏆 L'Oréal Professionnel Products Only",
+  '🏆 Premium Professional Products Only',
   '🎨 Trial Session Included',
   '📸 Makeup Artist Portfolio Available',
   '💬 WhatsApp Consultation Free',
 ];
 
-/* TEMPLATE: Replace with actual bridal portfolio images */
 const portfolioImages = [
-  { src: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80', caption: 'Traditional Bridal Look' },
-  { src: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80', caption: 'Reception Makeup' },
-  { src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=80', caption: 'Mehendi Function' },
-  { src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80', caption: 'Sangeet Night Look' },
-  { src: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=80', caption: 'Pre-Bridal Spa' },
-  { src: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80', caption: 'Bridal Hair Styling' },
+  { src: '/salon/bridal-makeup.png', caption: 'Bridal Makeup by Tanvi Singh' },
+  { src: '/salon/hair-styling.png', caption: 'Bridal Hair Styling' },
+  { src: '/salon/keratin-treatment.png', caption: 'Pre-Bridal Hair Treatment' },
+  { src: '/salon/facial-treatment.png', caption: 'Pre-Bridal Gold Facial' },
+  { src: '/salon/nail-art.png', caption: 'Bridal Nail Art' },
+  { src: '/salon/reception-desk.jpg', caption: 'Studio Fix Salon' },
 ];
 
 export default function Bridal() {
@@ -81,12 +79,12 @@ export default function Bridal() {
           <span className="section-label">BRIDAL COLLECTION</span>
           <h2 className={styles.bridalTitle}>Bridal Beauty — Your Most <span className="gold-text">Precious</span> Day</h2>
           <p className="section-subtitle">
-            From pre-bridal glow treatments to the final bridal look on your big day — our specialists craft
+            From pre-bridal glow treatments to the final bridal look on your big day — Tanvi Singh and the Studio Fix team craft
             a complete bridal journey tailored to you.
           </p>
         </div>
 
-        {/* Bridal Portfolio Grid — NEW */}
+        {/* Bridal Portfolio Grid */}
         <div className={styles.portfolioSection} data-aos="fade-up">
           <h3 className={styles.portfolioTitle}>✦ Our Bridal Work</h3>
           <div className={styles.portfolioGrid}>
@@ -94,7 +92,7 @@ export default function Bridal() {
               <div className={styles.portfolioItem} key={i}>
                 <img
                   src={img.src}
-                  alt={img.caption}
+                  alt={`${img.caption} at Studio Fix, Delhi`}
                   width={600}
                   height={400}
                   loading="lazy"
@@ -132,9 +130,8 @@ export default function Bridal() {
                 ))}
               </ul>
 
-              {/* TEMPLATE: Replace WhatsApp number */}
               <a
-                href={`https://wa.me/+91XXXXXXXXXX?text=${encodeURIComponent(`Hi! I'm interested in the ${pkg.name} bridal package (${pkg.price}). Please share more details.`)}`}
+                href={`https://wa.me/917042044784?text=${encodeURIComponent(`Hi! I'm interested in the ${pkg.name} bridal package. Please share more details.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`btn-gold ${styles.cardBtn}`}
@@ -156,11 +153,9 @@ export default function Bridal() {
         <div className={styles.testimonial} data-aos="fade-up">
           <div className={styles.quoteIcon}>&ldquo;</div>
           <p className={styles.quoteText}>
-            {/* TEMPLATE: Replace with actual bridal testimonial */}
-            My wedding day was perfect. The team made me feel like an absolute queen —
-            the makeup lasted all day and night!
+            Tanvi is an amazing makeup artist. I booked her for my wedding makeup and she really lived upto to my expectations. I clearly mentioned that I wanted to look all natural in my wedding and she made sure to incorporate every little request that I had.
           </p>
-          <p className={styles.quoteAuthor}>— Client Name, Bride ⭐⭐⭐⭐⭐</p>
+          <p className={styles.quoteAuthor}>— Shweta Jain, Bride ⭐⭐⭐⭐⭐</p>
         </div>
       </div>
     </section>

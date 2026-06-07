@@ -3,10 +3,10 @@ import Link from 'next/link';
 import styles from './About.module.css';
 
 const features = [
-  { icon: '🥇', text: "L'Oréal Professionnel Partner" },
-  { icon: '🏳️‍🌈', text: 'LGBTQ+ Friendly Space' },
-  { icon: '✂️', text: 'Expert Stylists Since 2014' },
-  { icon: '⭐', text: '4.9 Stars — 126 Reviews' },
+  { icon: '💇', text: 'Unisex Salon & Makeup Studio' },
+  { icon: '♿', text: 'Wheelchair Accessible' },
+  { icon: '💳', text: 'Cards & UPI Accepted' },
+  { icon: '⭐', text: '4.4 Stars — 262 Reviews' },
 ];
 
 export default function About() {
@@ -17,8 +17,8 @@ export default function About() {
         <div className={styles.imageStack} data-aos="fade-right">
           <div className={styles.img1}>
             <img
-              src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&q=80"
-              alt="Professional hair styling in action at V Unisex Salon"
+              src="/salon/hero-interior.png"
+              alt="Studio Fix salon interior with styling chairs and wash basins in Amar Colony, Delhi"
               width={600}
               height={450}
               loading="lazy"
@@ -27,8 +27,8 @@ export default function About() {
           </div>
           <div className={styles.img2}>
             <img
-              src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=600&q=80"
-              alt="Expert barber providing precision grooming services"
+              src="/salon/interior-wide.png"
+              alt="Elegant interior view of Studio Fix with arched mirrors and premium decor"
               width={600}
               height={450}
               loading="lazy"
@@ -36,8 +36,8 @@ export default function About() {
             />
           </div>
           <div className={styles.floatingCard}>
-            <span className={styles.floatingRating}>★ 4.9 / 5</span>
-            <span className={styles.floatingText}>Based on 126 Google Reviews</span>
+            <span className={styles.floatingRating}>★ 4.4 / 5</span>
+            <span className={styles.floatingText}>Based on 262 Google Reviews</span>
           </div>
         </div>
 
@@ -46,16 +46,16 @@ export default function About() {
           <span className="section-label">OUR STORY</span>
           <h2 className="section-title">Where <span className="gold-text">Craft</span> Meets Luxury</h2>
           <p className={styles.body}>
-            V Unisex Salon was born from a single belief — that premium beauty care should be accessible
-            to everyone in Delhi. Owned by the Manocha Brothers and nestled in the heart of Saket&apos;s Mini Market,
-            our salon has grown into a trusted destination for men, women, and all who believe their appearance
-            is worth investing in. Our stylists — led by the celebrated Faizan — bring years of expertise,
-            precision, and passion to every service, every day.
+            Studio Fix by Tanvi Singh is a premium unisex salon and makeup studio nestled in the
+            heart of Amar Colony, Delhi. Known for exceptional bridal makeup, expert hair makeovers,
+            and meticulous attention to detail, Studio Fix has earned a loyal following of clients who
+            trust us with their most important looks.
           </p>
           <p className={styles.body}>
-            We are a certified L&apos;Oréal Professionnel partner salon, which means every hair treatment uses only
-            professional-grade products. Our space is clean, air-conditioned, relaxing, and — most importantly —
-            completely welcoming to everyone, including our LGBTQ+ family.
+            From stunning balayage and keratin treatments to relaxing facials and nail art, every
+            service is delivered by our talented team — including David, Rajesh, and Gazal — in a
+            warm, welcoming space designed for comfort and luxury. Rated 4.4★ on Google with 262
+            reviews, our clients consistently praise our friendly team and professional results.
           </p>
 
           <div className={styles.features}>

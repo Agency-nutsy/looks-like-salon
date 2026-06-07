@@ -7,23 +7,23 @@ import WhatsAppFloat from '@/components/WhatsAppFloat';
 import LoadingScreen from '@/components/LoadingScreen';
 
 /* ============================================
-   TEMPLATE VARIABLES — Replace these for each salon
+   STUDIO FIX UNISEX SALON & MAKEUP — by Tanvi Singh
    ============================================ */
-const SALON_NAME = 'Your Salon Name';
-const SALON_TAGLINE = 'Premium Unisex Salon';
-const SALON_PHONE = '+91 XXXXX XXXXX';
-const SALON_PHONE_RAW = '+91XXXXXXXXXX'; // No spaces, for WhatsApp/tel links
-const SALON_DOMAIN = 'https://yoursalon.com';
-const SALON_ADDRESS = 'Your Full Address Here';
-const SALON_CITY = 'Your City';
-const SALON_STATE = 'Your State';
-const SALON_PIN = '000000';
-const SALON_RATING = '4.9';
-const SALON_REVIEW_COUNT = '100';
-const SALON_HOURS = 'Mo-Su 08:30-21:00';
-const SALON_OWNER = 'Owner Name';
-const SALON_INSTAGRAM = 'https://www.instagram.com/your_salon/';
-const SALON_GOOGLE_MAPS = 'https://www.google.com/maps/search/Your+Salon';
+const SALON_NAME = 'Studio Fix';
+const SALON_TAGLINE = 'Luxury Hair, Makeup & Beauty Redefined';
+const SALON_PHONE = '+91 70420 44784';
+const SALON_PHONE_RAW = '+917042044784';
+const SALON_DOMAIN = 'https://studiofixsalon.com';
+const SALON_ADDRESS = 'E-33, Amar Colony, 1st Floor, Above Dominos';
+const SALON_CITY = 'Delhi';
+const SALON_STATE = 'Delhi';
+const SALON_PIN = '110024';
+const SALON_RATING = '4.4';
+const SALON_REVIEW_COUNT = '262';
+const SALON_HOURS = 'Mo-Su 10:30-21:00';
+const SALON_OWNER = 'Tanvi Singh';
+const SALON_INSTAGRAM = 'https://www.instagram.com/studiofixdelhi/';
+const SALON_GOOGLE_MAPS = 'https://maps.app.goo.gl/WP7A4nYDrUAq3Aa58';
 /* ============================================ */
 
 export const metadata = {

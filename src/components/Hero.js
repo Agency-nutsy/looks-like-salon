@@ -71,8 +71,7 @@ export default function Hero() {
           <div className={styles.left}>
             <div className={styles.locationLabel}>
               <span className={styles.goldLine}></span>
-              {/* TEMPLATE: Replace with salon location */}
-              ✦ YOUR CITY, YOUR STATE
+              ✦ AMAR COLONY, DELHI
             </div>
 
             <h1 className={styles.heading}>
@@ -85,13 +84,12 @@ export default function Hero() {
             </h1>
 
             <p className={styles.subtitle}>
-              {/* TEMPLATE: Replace with salon description */}
-              Step into a realm of luxury and precision. We craft bespoke haircuts, luminous color, and radiant beauty treatments to reveal the most confident you.
+              Step into Studio Fix by Tanvi Singh — where luxury meets precision. From stunning bridal transformations to expert hair makeovers, we craft bespoke beauty experiences that reveal the most confident you.
             </p>
 
             <div className={styles.ctas}>
               <a
-                href="https://wa.me/+91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment"
+                href="https://wa.me/917042044784?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-gold"
@@ -107,17 +105,17 @@ export default function Hero() {
             {/* Trust Stats */}
             <div className={styles.stats} ref={statsRef}>
               <div className={styles.stat}>
-                <span className="counter-value" data-target="4.9" data-suffix="">{mounted ? '0' : '4.9'}</span>
+                <span className="counter-value" data-target="4.4" data-suffix="">{mounted ? '0' : '4.4'}</span>
                 <span className="counter-label">Google Rating</span>
               </div>
               <div className={styles.statDivider}></div>
               <div className={styles.stat}>
-                <span className="counter-value" data-target="100" data-suffix="+">{mounted ? '0' : '100+'}</span>
-                <span className="counter-label">5-Star Reviews</span>
+                <span className="counter-value" data-target="262" data-suffix="+">{mounted ? '0' : '262+'}</span>
+                <span className="counter-label">Google Reviews</span>
               </div>
               <div className={styles.statDivider}></div>
               <div className={styles.stat}>
-                <span className="counter-value" data-target="10" data-suffix="+">{mounted ? '0' : '10+'}</span>
+                <span className="counter-value" data-target="5" data-suffix="+">{mounted ? '0' : '5+'}</span>
                 <span className="counter-label">Years Exp.</span>
               </div>
             </div>
@@ -131,8 +129,8 @@ export default function Hero() {
               
               <div className={`${styles.imgWrap} ${styles.imgMain}`}>
                 <img
-                  src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80"
-                  alt="Premium salon interior"
+                  src="/salon/reception-desk.jpg"
+                  alt="Studio Fix reception area with crystal chandelier and marble desk in Amar Colony, Delhi"
                   loading="eager"
                   decoding="async"
                 />
@@ -140,8 +138,8 @@ export default function Hero() {
               
               <div className={`${styles.imgWrap} ${styles.imgTopRight}`}>
                 <img
-                  src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=400&q=80"
-                  alt="Hair styling"
+                  src="/salon/styling-stations.png"
+                  alt="Professional styling stations with gold-framed mirrors at Studio Fix, Delhi"
                   loading="lazy"
                   decoding="async"
                 />
@@ -149,8 +147,8 @@ export default function Hero() {
               
               <div className={`${styles.imgWrap} ${styles.imgBottomLeft}`}>
                 <img
-                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&q=80"
-                  alt="Makeup"
+                  src="/salon/bridal-makeup.png"
+                  alt="Bridal makeup session at Studio Fix by Tanvi Singh, Delhi"
                   loading="lazy"
                   decoding="async"
                 />

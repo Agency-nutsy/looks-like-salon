@@ -3,39 +3,33 @@ import styles from './Testimonials.module.css';
 
 const reviews = [
   {
-    text: "I had an amazing experience with Faizan at this salon! He was extremely professional, knowledgeable, and super helpful throughout the entire service.",
-    name: 'Akshit Bansal',
-    service: 'Facial',
+    text: "Studiofix is my go to salon place for whenever I need to get anything done, ranging from my bridal makeup to everyday stuff and most recently my hair make over. David pulled off the exact subtle soft look that I had wanted! 🥰 Great team, especially David.. The super helpful and friendly team makes me come here every time!",
+    name: 'Priyanka Arora',
+    service: 'Bridal Makeup + Hair Makeover',
     stars: 5,
   },
   {
-    text: "I got a mullet haircut and beard styling done. The stylist Faizan did an excellent job and styled both the haircut and beard perfectly.",
-    name: 'Naresh (Local Guide)',
-    service: 'Haircut + Beard',
+    text: "I had a wonderful experience at Studio Fix Salon. Their services are truly excellent, and the staff is very professional. Rajesh did my pedicure, and I must say he is extremely skilled. He truly has magic in his hands and pays great attention to detail. Gazal is very sweet and friendly. She did my facial beautifully, and it was such a relaxing and refreshing experience. Highly recommended for anyone looking for quality services and a professional yet warm atmosphere.",
+    name: 'Pratiksha Yadav',
+    service: 'Pedicure + Facial',
     stars: 5,
   },
   {
-    text: "Kashish Rajput gave me an awesome haircut, the services are top notch!",
-    name: 'Anonymous',
-    service: 'Haircut',
+    text: "Just finished doing a pedicure, superb service, meticulously done process in a relaxed ambience. Special thanks to Rajesh for a wonderful pedicure! Please keep up the good work !",
+    name: 'Indrani Varma',
+    service: 'Pedicure',
     stars: 5,
   },
   {
-    text: "Very good service, very good behaviour of Owner and every staff.",
-    name: 'Google Review',
+    text: "Tanvi is an amazing makeup artist. I booked her for my wedding makeup and she really lived upto to my expectations. I clearly mentioned that I wanted to look all natural in my wedding and she made sure to incorporate every little request that I had. Keep up the good work!!",
+    name: 'Shweta Jain',
+    service: 'Bridal Makeup',
+    stars: 5,
+  },
+  {
+    text: "The service was excellent, and they paid attention to every small detail. You can truly see their dedication and passion for their work. I highly recommend this salon to anyone looking not just for great service, but also for a genuinely pleasant and respectful environment.",
+    name: 'Aditi Saini',
     service: '',
-    stars: 5,
-  },
-  {
-    text: "I did my hair cut and waxing and had a fantastic experience.",
-    name: 'Google Review',
-    service: 'Haircut + Waxing',
-    stars: 5,
-  },
-  {
-    text: "He carefully understood exactly what I wanted and delivered the perfect haircut just the way I had imagined.",
-    name: 'Ajay Singh',
-    service: 'Haircut',
     stars: 5,
   },
 ];
@@ -52,7 +46,7 @@ export default function Testimonials() {
         <div className={styles.headerRow} data-aos="fade-up">
           <div className={styles.headerLeft}>
             <span className="section-label">WHAT CLIENTS SAY</span>
-            <h2 className="section-title">126 Reasons to <span className="gold-text">Trust</span> Us</h2>
+            <h2 className="section-title">262 Reasons to <span className="gold-text">Trust</span> Us</h2>
           </div>
         </div>
 
@@ -80,12 +74,11 @@ export default function Testimonials() {
         <div className={styles.googleBar} data-aos="fade-up">
           <div className={styles.googleRating}>
             <span className={styles.googleStar}>⭐</span>
-            <span className={styles.googleScore}>4.9 / 5 on Google</span>
-            <span className={styles.googleCount}>Based on 126 reviews</span>
+            <span className={styles.googleScore}>4.4 / 5 on Google</span>
+            <span className={styles.googleCount}>Based on 262 reviews</span>
           </div>
-          {/* TEMPLATE: Replace with your Google Maps link */}
           <a
-            href="https://www.google.com/maps/search/Your+Salon"
+            href="https://maps.app.goo.gl/WP7A4nYDrUAq3Aa58"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline"

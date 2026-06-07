@@ -1,21 +1,20 @@
 'use client';
 import styles from './Offers.module.css';
 
-/* TEMPLATE: Replace with actual offers and validity dates */
 const offers = [
-  { icon: '🎁', title: 'First Visit Offer', desc: '20% off on any service for new clients. Valid on weekdays.', badge: '20% OFF', validity: 'Valid until [date]' },
-  { icon: '💆', title: 'Weekend Refresh', desc: 'Haircut + Cleanup + Threading combo at ₹799 (worth ₹1,050).', badge: '₹799', validity: 'Weekends only' },
-  { icon: '👫', title: 'Couple Package', desc: 'His & Hers combo: Haircut + Facial for both, ₹2,200.', badge: 'DUO', validity: 'Valid until [date]' },
+  { icon: '🎁', title: 'First Visit Offer', desc: '20% off on any service for new clients. Valid on weekdays.', badge: '20% OFF', validity: 'Contact us for details' },
+  { icon: '💆', title: 'Weekday Refresh', desc: 'Haircut + Cleanup + Threading combo at a special rate.', badge: 'COMBO', validity: 'Weekdays only' },
+  { icon: '👫', title: 'Couple Package', desc: 'His & Hers combo: Haircut + Facial for both at a discounted price.', badge: 'DUO', validity: 'Contact us for details' },
   { icon: '🎂', title: 'Birthday Special', desc: 'Free deep conditioning with any colour service on your birthday month.', badge: 'FREE', validity: 'Your birthday month' },
-  { icon: '💍', title: 'Pre-Wedding Glow', desc: 'Book any bridal package, get a free gold facial (₹900 value).', badge: '₹900', validity: 'Valid until [date]' },
-  { icon: '📱', title: 'Instagram Referral', desc: 'Refer a friend, both get 15% off their next visit.', badge: '15%', validity: 'Ongoing offer' },
+  { icon: '💍', title: 'Pre-Wedding Glow', desc: 'Book any bridal package, get a complimentary gold facial.', badge: 'BONUS', validity: 'Contact us for details' },
+  { icon: '📱', title: 'Referral Reward', desc: 'Refer a friend, both get 15% off your next visit.', badge: '15%', validity: 'Ongoing offer' },
 ];
 
 const memberships = [
   {
     tier: 'Silver',
-    price: '₹2,999',
-    period: '/year',
+    price: 'Contact us',
+    period: '',
     perks: [
       '10% off all services',
       'Priority appointment booking',
@@ -25,8 +24,8 @@ const memberships = [
   },
   {
     tier: 'Gold',
-    price: '₹5,999',
-    period: '/year',
+    price: 'Contact us',
+    period: '',
     perks: [
       '20% off all services',
       'Skip the queue — priority always',
@@ -56,11 +55,9 @@ export default function Offers() {
               <span className={styles.offerIcon}>{offer.icon}</span>
               <h3 className={styles.offerTitle}>{offer.title}</h3>
               <p className={styles.offerDesc}>{offer.desc}</p>
-              {/* Offer validity */}
               <p className="offer-validity">{offer.validity}</p>
-              {/* TEMPLATE: Replace WhatsApp number */}
               <a
-                href={`https://wa.me/+91XXXXXXXXXX?text=${encodeURIComponent(`Hi! I'd like to claim the "${offer.title}" offer.`)}`}
+                href={`https://wa.me/917042044784?text=${encodeURIComponent(`Hi! I'd like to claim the "${offer.title}" offer at Studio Fix.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.offerBtn}
@@ -75,8 +72,7 @@ export default function Offers() {
         <div className={styles.membershipSection}>
           <div className="section-header" data-aos="fade-up">
             <span className="section-label">MEMBERSHIP</span>
-            {/* TEMPLATE: Replace club name */}
-            <h2 className="section-title">Join the <span className="gold-text">V Club</span></h2>
+            <h2 className="section-title">Join the <span className="gold-text">Studio Fix Club</span></h2>
           </div>
 
           <div className={styles.membershipGrid}>
@@ -95,9 +91,8 @@ export default function Offers() {
                     </li>
                   ))}
                 </ul>
-                {/* TEMPLATE: Replace WhatsApp number */}
                 <a
-                  href={`https://wa.me/+91XXXXXXXXXX?text=${encodeURIComponent(`Hi! I'd like to join the ${m.tier} Membership (${m.price}/year).`)}`}
+                  href={`https://wa.me/917042044784?text=${encodeURIComponent(`Hi! I'd like to join the ${m.tier} Membership at Studio Fix. Please share more details.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-gold"
@@ -120,9 +115,8 @@ export default function Offers() {
                 <span className={styles.voucherAmount} key={i}>{v}</span>
               ))}
             </div>
-            {/* TEMPLATE: Replace WhatsApp number */}
             <a
-              href="https://wa.me/+91XXXXXXXXXX?text=Hi!%20I'd%20like%20to%20order%20a%20Gift%20Voucher."
+              href="https://wa.me/917042044784?text=Hi!%20I'd%20like%20to%20order%20a%20Gift%20Voucher%20from%20Studio%20Fix."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline"

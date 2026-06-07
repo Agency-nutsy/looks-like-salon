@@ -1,15 +1,14 @@
 'use client';
 import styles from './Contact.module.css';
 
-/* TEMPLATE: Replace with actual salon hours */
 const hours = [
-  { day: 'Monday', time: '8:30 AM – 9:00 PM' },
-  { day: 'Tuesday', time: '8:30 AM – 9:00 PM' },
-  { day: 'Wednesday', time: '8:30 AM – 9:00 PM' },
-  { day: 'Thursday', time: '8:30 AM – 9:00 PM' },
-  { day: 'Friday', time: '8:30 AM – 9:00 PM' },
-  { day: 'Saturday', time: '8:30 AM – 9:00 PM' },
-  { day: 'Sunday', time: '8:30 AM – 9:00 PM' },
+  { day: 'Monday', time: '10:30 AM – 9:00 PM' },
+  { day: 'Tuesday', time: '10:30 AM – 9:00 PM' },
+  { day: 'Wednesday', time: '10:30 AM – 9:00 PM' },
+  { day: 'Thursday', time: '10:30 AM – 9:00 PM' },
+  { day: 'Friday', time: '10:30 AM – 9:00 PM' },
+  { day: 'Saturday', time: '10:30 AM – 9:00 PM' },
+  { day: 'Sunday', time: '10:30 AM – 9:00 PM' },
 ];
 
 export default function Contact() {
@@ -19,42 +18,36 @@ export default function Contact() {
         {/* Left — Info */}
         <div className={styles.info} data-aos="fade-right">
           <span className="section-label">GET IN TOUCH</span>
-          {/* TEMPLATE: Replace City */}
-          <h2 className="section-title">Find Us in <span className="gold-text">Your City</span></h2>
+          <h2 className="section-title">Find Us in <span className="gold-text">Amar Colony</span></h2>
 
           <div className={styles.addressCard}>
             <div className={styles.addressRow}>
               <span>📍</span>
               <div>
                 <strong>Address</strong>
-                {/* TEMPLATE: Replace Address */}
-                <p>Your Full Address Here, City, State, PIN</p>
+                <p>E-33, Amar Colony, 1st Floor, Above Dominos, Delhi 110024</p>
               </div>
             </div>
             <div className={styles.addressRow}>
               <span>🕐</span>
               <div>
                 <strong>Open Hours</strong>
-                {/* TEMPLATE: Replace Hours Summary */}
-                <p>8:30 AM – 9:00 PM, All Days</p>
+                <p>10:30 AM – 9:00 PM, All Days</p>
               </div>
             </div>
             <div className={styles.addressRow}>
               <span>📞</span>
               <div>
                 <strong>Phone</strong>
-                {/* TEMPLATE: Replace Phone */}
-                <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a>
+                <a href="tel:+917042044784">+91 70420 44784</a>
               </div>
             </div>
 
             <div className={styles.btns}>
-              {/* TEMPLATE: Replace WhatsApp link */}
-              <a href="https://wa.me/+91XXXXXXXXXX?text=Hi%2C%20I%20want%20to%20book%20an%20appointment" target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
+              <a href="https://wa.me/917042044784?text=Hi%2C%20I%20want%20to%20book%20an%20appointment" target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
                 💬 WhatsApp Us
               </a>
-              {/* TEMPLATE: Replace Phone link */}
-              <a href="tel:+91XXXXXXXXXX" className="btn-outline">
+              <a href="tel:+917042044784" className="btn-outline">
                 📞 Call Now
               </a>
             </div>
@@ -73,14 +66,13 @@ export default function Contact() {
 
           {/* Social Links */}
           <div className={styles.socials}>
-            {/* TEMPLATE: Replace social links */}
-            <a href="https://www.instagram.com/your_salon/" target="_blank" rel="noopener noreferrer" className={styles.socialPill}>
-              📷 @your_salon
+            <a href="https://www.instagram.com/studiofixdelhi/" target="_blank" rel="noopener noreferrer" className={styles.socialPill}>
+              📷 @studiofixdelhi
             </a>
-            <a href="https://wa.me/+91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className={styles.socialPill}>
+            <a href="https://wa.me/917042044784" target="_blank" rel="noopener noreferrer" className={styles.socialPill}>
               💬 WhatsApp
             </a>
-            <a href="https://www.google.com/maps/search/Your+Salon" target="_blank" rel="noopener noreferrer" className={styles.socialPill}>
+            <a href="https://maps.app.goo.gl/WP7A4nYDrUAq3Aa58" target="_blank" rel="noopener noreferrer" className={styles.socialPill}>
               📍 Google Maps
             </a>
           </div>
@@ -88,9 +80,8 @@ export default function Contact() {
 
         {/* Right — Map */}
         <div className={styles.mapWrap} data-aos="fade-left">
-          {/* TEMPLATE: Replace src with your salon's Google Maps Embed URL */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.0688975472578!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1683012345678!5m2!1sen!2sin"
+            src="https://maps.google.com/maps?q=28.5602943,77.2438498&z=15&output=embed"
             width="100%"
             height="500"
             style={{
@@ -100,7 +91,7 @@ export default function Contact() {
             }}
             allowFullScreen
             loading="lazy"
-            title="Salon Location on Google Maps"
+            title="Studio Fix Salon Location on Google Maps"
           ></iframe>
         </div>
       </div>

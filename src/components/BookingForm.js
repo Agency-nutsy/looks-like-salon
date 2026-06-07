@@ -4,13 +4,13 @@ import styles from './BookingForm.module.css';
 
 const serviceOptions = [
   'Hair', 'Skin & Face', 'Makeup', 'Nails', 'Body',
-  "Men's Grooming", 'Bridal', 'Not Sure — Suggest Me'
+  'Bridal', 'Not Sure — Suggest Me'
 ];
 
 const timeSlots = [
-  '8:30 AM – 10:00 AM', '10:00 AM – 12:00 PM',
-  '12:00 PM – 2:00 PM', '2:00 PM – 4:00 PM',
-  '4:00 PM – 6:00 PM', '6:00 PM – 8:00 PM'
+  '10:30 AM – 12:00 PM', '12:00 PM – 2:00 PM',
+  '2:00 PM – 4:00 PM', '4:00 PM – 6:00 PM',
+  '6:00 PM – 8:00 PM', '8:00 PM – 9:00 PM'
 ];
 
 export default function BookingForm() {
@@ -43,13 +43,13 @@ export default function BookingForm() {
 
     setErrors({});
 
-    const waText = `Hello V Unisex Salon! 🙏\n\nI would like to book an appointment.\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n✂️ Service: ${service}\n📅 Date: ${date}\n⏰ Time: ${time}\n📝 Notes: ${message || 'None'}\n\nPlease confirm my booking. Thank you!`;
+    const waText = `Hello Studio Fix! 🙏\n\nI would like to book an appointment.\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n✂️ Service: ${service}\n📅 Date: ${date}\n⏰ Time: ${time}\n📝 Notes: ${message || 'None'}\n\nPlease confirm my booking. Thank you!`;
 
     setShowConfirmation(true);
 
     setTimeout(() => {
       const encodedText = encodeURIComponent(waText);
-      window.open(`https://wa.me/+919990285515?text=${encodedText}`, '_blank');
+      window.open(`https://wa.me/917042044784?text=${encodedText}`, '_blank');
       setShowConfirmation(false);
     }, 1200);
   };
@@ -149,18 +149,18 @@ export default function BookingForm() {
 
         {/* Alternative Contact */}
         <div className={styles.altContact} data-aos="fade-up">
-          <a href="tel:+919990285515" className={styles.altItem}>
+          <a href="tel:+917042044784" className={styles.altItem}>
             <span>📞</span>
             <div>
               <strong>Call Us</strong>
-              <span>+91 99902 85515</span>
+              <span>+91 70420 44784</span>
             </div>
           </a>
-          <a href="https://www.google.com/maps/search/V+Unisex+Salon+Saket+New+Delhi" target="_blank" rel="noopener noreferrer" className={styles.altItem}>
+          <a href="https://maps.app.goo.gl/WP7A4nYDrUAq3Aa58" target="_blank" rel="noopener noreferrer" className={styles.altItem}>
             <span>📍</span>
             <div>
               <strong>Visit Us</strong>
-              <span>Shop No. 10, Mini Market, J Block, Saket, New Delhi 110017</span>
+              <span>E-33, Amar Colony, 1st Floor, Above Dominos, Delhi 110024</span>
             </div>
           </a>
         </div>

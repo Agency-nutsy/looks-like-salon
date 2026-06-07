@@ -2,58 +2,35 @@
 import { useState } from 'react';
 import styles from './Services.module.css';
 
-const categories = ['All', 'Hair', 'Skin & Face', 'Makeup', 'Nails', 'Body', "Men's Grooming"];
+const categories = ['All', 'Hair', 'Skin & Face', 'Makeup', 'Nails', 'Body'];
 
 const services = [
-  // HAIR
-  { cat: 'Hair', icon: '✂️', name: 'Haircut & Styling (Women)', desc: 'Expert cut + blowdry + styling for a stunning look.', price: '₹400', duration: '~45 min' },
-  { cat: 'Hair', icon: '✂️', name: 'Haircut & Styling (Men)', desc: 'Precision cut + styling with finishing spray.', price: '₹200', duration: '~30 min' },
-  { cat: 'Hair', icon: '👶', name: 'Kids Haircut', desc: 'Gentle cut for children, stress-free experience.', price: '₹150', duration: '~20 min' },
-  { cat: 'Hair', icon: '🎨', name: 'Hair Colour (Global)', desc: "Full head professional colour using L'Oréal Majirel.", price: '₹1,200', duration: '1.5–2 hrs' },
-  { cat: 'Hair', icon: '🌟', name: 'Highlights / Balayage', desc: "Partial or full highlights using L'Oréal professional.", price: '₹2,000', duration: '2–3 hrs' },
-  { cat: 'Hair', icon: '💎', name: 'Keratin Treatment', desc: 'Frizz-free, smooth, shiny hair for 4–6 months.', price: '₹3,500', duration: '2.5–4 hrs' },
-  { cat: 'Hair', icon: '✨', name: 'Smoothening Treatment', desc: 'Semi-permanent straightening with professional care.', price: '₹4,000', duration: '3–4 hrs' },
-  { cat: 'Hair', icon: '💆', name: 'Hair Spa / Head Spa', desc: 'Deep conditioning, scalp massage, steam treatment.', price: '₹700', duration: '~45 min' },
-  { cat: 'Hair', icon: '💫', name: 'Hair Rebonding', desc: 'Permanent straightening, includes post-treatment care.', price: '₹4,500', duration: '3–5 hrs' },
-  { cat: 'Hair', icon: '🔗', name: 'Hair Extensions', desc: 'Clip-in and tape-in extensions for volume and length.', price: '₹3,000', duration: '1–2 hrs' },
+  // HAIR — confirmed from Google Maps & reviews
+  { cat: 'Hair', icon: '✂️', name: 'Haircut & Styling', desc: 'Expert precision cut, blowdry and styling for men & women.', price: 'Price on request', duration: '~30–45 min' },
+  { cat: 'Hair', icon: '🎨', name: 'Hair Colour (Global)', desc: 'Full head professional colour for a vibrant new look.', price: 'Price on request', duration: '1.5–2 hrs' },
+  { cat: 'Hair', icon: '🌟', name: 'Babylights & Highlights', desc: 'Delicate babylights or bold highlights for dimensional colour.', price: 'Price on request', duration: '2–3 hrs' },
+  { cat: 'Hair', icon: '✨', name: 'Balayage', desc: 'Hand-painted balayage for a natural sun-kissed finish.', price: 'Price on request', duration: '2–3 hrs' },
+  { cat: 'Hair', icon: '💎', name: 'Keratin Treatment', desc: 'Frizz-free, smooth, shiny hair for 4–6 months.', price: 'Price on request', duration: '2.5–4 hrs' },
+  { cat: 'Hair', icon: '💫', name: 'Nanoplastia', desc: 'Advanced organic hair smoothening treatment for lasting results.', price: 'Price on request', duration: '3–4 hrs' },
+  { cat: 'Hair', icon: '💆', name: 'Hair Spa', desc: 'Deep conditioning, scalp massage, and steam treatment.', price: 'Price on request', duration: '~45 min' },
 
-  // SKIN & FACE
-  { cat: 'Skin & Face', icon: '🧖', name: 'Classic Facial', desc: 'Deep cleanse, toning, massage, and mask.', price: '₹600', duration: '~60 min' },
-  { cat: 'Skin & Face', icon: '✨', name: 'Gold Facial', desc: 'Anti-ageing gold-infused treatment for radiant skin.', price: '₹900', duration: '~75 min' },
-  { cat: 'Skin & Face', icon: '☀️', name: 'D-Tan Facial / Pack', desc: 'Removes sun tan, brightens complexion instantly.', price: '₹500', duration: '~45 min' },
-  { cat: 'Skin & Face', icon: '🧹', name: 'Cleanup', desc: 'Express face cleanup for instant freshness.', price: '₹350', duration: '~30 min' },
-  { cat: 'Skin & Face', icon: '🧬', name: 'Anti-Ageing Facial', desc: 'Advanced skin-firming and wrinkle-reduction treatment.', price: '₹1,200', duration: '~90 min' },
-  { cat: 'Skin & Face', icon: '🍊', name: 'Fruit Facial', desc: 'Natural fruit enzymes for glowing, refreshed skin.', price: '₹700', duration: '~60 min' },
-  { cat: 'Skin & Face', icon: '💡', name: 'Bleach (Face/Full Body)', desc: 'Brightening bleach treatment, professional-grade.', price: '₹300', duration: '~20 min' },
-  { cat: 'Skin & Face', icon: '🪡', name: 'Threading', desc: 'Precise eyebrow/upper lip/full face hair removal.', price: '₹50', duration: '~10 min' },
+  // SKIN & FACE — confirmed from reviews
+  { cat: 'Skin & Face', icon: '🧖', name: 'Facial', desc: 'Professional facial treatment for glowing, refreshed skin.', price: 'Price on request', duration: '~60 min' },
+  { cat: 'Skin & Face', icon: '✨', name: 'Gold Facial', desc: 'Anti-ageing gold-infused treatment for radiant skin.', price: 'Price on request', duration: '~75 min' },
+  { cat: 'Skin & Face', icon: '🧹', name: 'Cleanup', desc: 'Express face cleanup for instant freshness.', price: 'Price on request', duration: '~30 min' },
 
-  // MAKEUP
-  { cat: 'Makeup', icon: '🎭', name: 'Party Makeup', desc: 'HD or Airbrush makeup for parties and events.', price: '₹2,000', duration: '~60 min' },
-  { cat: 'Makeup', icon: '👰', name: 'Bridal Makeup', desc: 'Complete bridal look including draping assistance.', price: '₹8,000', duration: '2–3 hrs' },
-  { cat: 'Makeup', icon: '💄', name: 'Pre-Bridal Package', desc: 'Mehendi function, sangeet, and reception makeup.', price: '₹5,000', duration: '~90 min' },
-  { cat: 'Makeup', icon: '💍', name: 'Engagement Makeup', desc: 'Elegant, photogenic makeup for your special day.', price: '₹3,500', duration: '~90 min' },
+  // MAKEUP — confirmed from Google Maps
+  { cat: 'Makeup', icon: '👰', name: 'Bridal Makeup', desc: 'Complete bridal look by Tanvi Singh including draping assistance.', price: 'Price on request', duration: '2–3 hrs' },
+  { cat: 'Makeup', icon: '🎭', name: 'Party Makeup', desc: 'HD or Airbrush makeup for parties and special events.', price: 'Price on request', duration: '~60 min' },
+  { cat: 'Makeup', icon: '💄', name: 'Engagement Makeup', desc: 'Elegant, photogenic makeup for your special day.', price: 'Price on request', duration: '~90 min' },
 
-  // NAILS
-  { cat: 'Nails', icon: '💅', name: 'Manicure (Basic)', desc: 'Nail shaping, cuticle care, hand massage, polish.', price: '₹350', duration: '~30 min' },
-  { cat: 'Nails', icon: '🦶', name: 'Pedicure (Basic)', desc: 'Foot soak, scrub, nail care, massage, polish.', price: '₹400', duration: '~40 min' },
-  { cat: 'Nails', icon: '💎', name: 'Gel Nail Extensions', desc: 'Long-lasting gel nails, custom shapes.', price: '₹900', duration: '~60 min' },
-  { cat: 'Nails', icon: '🎨', name: 'Nail Art', desc: 'Custom nail art designs, per nail or full set.', price: '₹100/nail', duration: '~15 min/nail' },
-  { cat: 'Nails', icon: '🤍', name: 'French Manicure', desc: 'Classic French tip style with clean finish.', price: '₹600', duration: '~40 min' },
-  { cat: 'Nails', icon: '🧴', name: 'Spa Manicure / Pedicure', desc: 'Deluxe treatment with mask, paraffin, massage.', price: '₹800', duration: '~60 min' },
+  // NAILS — confirmed from Google Maps
+  { cat: 'Nails', icon: '💅', name: 'Nail Extensions', desc: 'Long-lasting nail extensions with custom shapes and designs.', price: 'Price on request', duration: '~60 min' },
+  { cat: 'Nails', icon: '🎨', name: 'Nail Art', desc: 'Custom nail art designs, per nail or full set.', price: 'Price on request', duration: '~15 min/nail' },
 
-  // BODY
-  { cat: 'Body', icon: '🍯', name: 'Full Body Waxing', desc: 'Rica/Chocolate/Normal wax available.', price: '₹1,200', duration: '~90 min' },
-  { cat: 'Body', icon: '🦵', name: 'Arms / Legs / Underarms', desc: 'Individually priced waxing zones.', price: '₹200', duration: '~20 min' },
-  { cat: 'Body', icon: '✨', name: 'Body Polishing', desc: 'Full-body exfoliation for glowing, smooth skin.', price: '₹2,000', duration: '~90 min' },
-  { cat: 'Body', icon: '💡', name: 'Body Bleach', desc: 'Full body brightening treatment.', price: '₹1,500', duration: '~45 min' },
-
-  // MEN'S GROOMING
-  { cat: "Men's Grooming", icon: '🧔', name: 'Beard Trim & Shaping', desc: 'Precision beard sculpting and styling.', price: '₹150', duration: '~15 min' },
-  { cat: "Men's Grooming", icon: '🎨', name: 'Beard Colour', desc: 'Professional colour for beard and moustache.', price: '₹300', duration: '~30 min' },
-  { cat: "Men's Grooming", icon: '🧖‍♂️', name: "Men's Facial", desc: "Targeted skincare facial for men's skin concerns.", price: '₹600', duration: '~60 min' },
-  { cat: "Men's Grooming", icon: '💆‍♂️', name: 'Head Massage', desc: 'Relaxing scalp and shoulder massage with oil.', price: '₹300', duration: '~30 min' },
-  { cat: "Men's Grooming", icon: '🧹', name: 'Ear/Nose/Neck Cleanup', desc: 'Professional grooming for complete cleanliness.', price: '₹100', duration: '~10 min' },
-  { cat: "Men's Grooming", icon: '🤲', name: "Men's Manicure / Pedicure", desc: 'Nail care and hand/foot treatment for men.', price: '₹400', duration: '~40 min' },
+  // BODY — confirmed from Google Maps & reviews
+  { cat: 'Body', icon: '🦶', name: 'Pedicure & Foot Massage', desc: 'Luxurious foot spa, scrub, nail care, and relaxing massage.', price: 'Price on request', duration: '~40 min' },
+  { cat: 'Body', icon: '💅', name: 'Manicure', desc: 'Nail shaping, cuticle care, hand massage, and polish.', price: 'Price on request', duration: '~30 min' },
 ];
 
 export default function Services() {
@@ -96,11 +73,11 @@ export default function Services() {
               <h3 className={styles.cardName}>{service.name}</h3>
               <p className={styles.cardDesc}>{service.desc}</p>
               <div className={styles.cardMeta}>
-                <p className={styles.cardPrice}>Starting from {service.price}</p>
+                <p className={styles.cardPrice}>{service.price}</p>
                 <span className="service-duration">🕐 {service.duration}</span>
               </div>
               <a
-                href={`https://wa.me/+91XXXXXXXXXX?text=${encodeURIComponent(`Hi! I'd like to book "${service.name}" (${service.price}).`)}`}
+                href={`https://wa.me/917042044784?text=${encodeURIComponent(`Hi! I'd like to book "${service.name}" at Studio Fix.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="service-book-btn"

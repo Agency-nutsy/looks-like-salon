@@ -1,8 +1,8 @@
 import Gallery from '@/components/Gallery';
 
 export const metadata = {
-  title: 'Gallery | Your Salon Name',
-  description: 'View the stunning transformations and our premium salon interior at Your Salon Name.',
+  title: 'Gallery | Studio Fix – Amar Colony, Delhi',
+  description: 'View stunning transformations, salon interior, and bridal work at Studio Fix in Amar Colony, Delhi.',
 };
 
 export default function GalleryPage() {

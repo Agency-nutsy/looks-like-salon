@@ -5,43 +5,43 @@ import styles from './FAQ.module.css';
 const faqs = [
   {
     q: 'Do I need to book an appointment or can I walk in?',
-    a: 'Both are welcome! However, for specific stylists or weekend slots, booking ahead via WhatsApp is recommended.',
+    a: 'Appointments are recommended for the best experience. You can book easily via WhatsApp at +91 70420 44784. Walk-ins are welcome based on availability.',
   },
   {
-    q: 'What hair product brands do you use?',
-    a: 'We are an authorised L\'Oréal Professionnel partner salon and use only professional-grade Majirel and Kérastase products.',
+    q: 'What services does Studio Fix offer?',
+    a: 'We offer a full range of beauty services including bridal makeup, haircuts, hair colour, balayage, babylights, nanoplastia, keratin treatment, hair spa, facials, pedicure, manicure, nail extensions, and nail art.',
   },
   {
-    q: 'Is the salon LGBTQ+ friendly?',
-    a: 'Absolutely. V Unisex Salon is a safe, welcoming, and inclusive space for everyone.',
+    q: 'Is Studio Fix wheelchair accessible?',
+    a: 'Yes! Our salon has a wheelchair-accessible entrance and wheelchair-accessible restroom.',
   },
   {
-    q: 'Do you offer bridal packages for North Indian weddings?',
-    a: 'Yes, we offer complete bridal packages including pre-bridal prep, bridal makeup, saree draping, and grooming packages for grooms too.',
+    q: 'Do you do bridal makeup?',
+    a: 'Absolutely! Bridal makeup is one of our specialties. Tanvi Singh personally handles bridal bookings. We offer complete bridal packages from pre-bridal prep to your wedding day look.',
   },
   {
-    q: 'What is the cost of a basic haircut?',
-    a: 'Women\'s haircuts start from ₹400, men\'s from ₹200, and kids\' from ₹150.',
+    q: 'What are the working hours?',
+    a: 'We are open every day from 10:30 AM to 9:00 PM, including weekends and holidays.',
   },
   {
-    q: 'How long does a keratin treatment take?',
-    a: 'Typically 2.5 to 4 hours depending on hair length and thickness.',
+    q: 'How much does a keratin treatment cost?',
+    a: 'Pricing depends on hair length and the specific treatment. Please contact us via WhatsApp or call +91 70420 44784 for a personalized quote.',
   },
   {
-    q: 'Can I get bridal makeup done for a destination wedding outside Delhi?',
-    a: 'Yes, our artists can travel for destination wedding bookings. Please contact us for quotes.',
-  },
-  {
-    q: 'Do you offer home services?',
-    a: 'Currently, all services are available in-salon only for best quality results.',
+    q: 'Where is Studio Fix located?',
+    a: 'We are at E-33, Amar Colony, 1st Floor, Above Dominos, Delhi 110024. Look for us above the Dominos outlet.',
   },
   {
     q: 'What payment methods do you accept?',
-    a: 'We accept Cash, UPI (PhonePe, GPay, Paytm), and all major cards.',
+    a: 'We accept cash, credit cards, debit cards, and NFC mobile payments (Google Pay, PhonePe, etc.).',
   },
   {
-    q: 'Where exactly are you located in Saket?',
-    a: 'We are at Shop No. 10, Mini Market, 27, J Block, Saket, New Delhi 110017 — near the J Block market, easily accessible from the Saket Metro Station.',
+    q: 'Is Studio Fix good for kids?',
+    a: 'Yes, our salon is kid-friendly and we welcome young clients.',
+  },
+  {
+    q: 'Can I see your work before booking?',
+    a: 'Yes! Check out our Gallery page or visit our Instagram @studiofixdelhi to see our latest transformations and client work.',
   },
 ];
 

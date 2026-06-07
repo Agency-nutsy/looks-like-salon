@@ -19,12 +19,33 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    // 1. Force scroll to top on page refresh
+    if (typeof window !== 'undefined' && 'scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
+    // 2. Handle sticky navbar styling
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const handleNavClick = (e, href) => {
+    if (pathname === href) {
+      e.preventDefault();
+      setMenuOpen(false);
+      setIsTransitioning(true);
+      window.scrollTo(0, 0);
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, 1200);
+    }
+  };
 
   // Close menu on route change
   useEffect(() => {
@@ -40,16 +61,21 @@ export default function Navbar() {
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.inner}>
         {/* Logo */}
-        {/* TEMPLATE: Replace salon name */}
-        <Link href="/" className={styles.logo} aria-label="Salon Home">
-          <svg className={styles.logoSvg} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M24 4L20 8L16 6L18 10L14 12L18 14L24 42L30 14L34 12L30 10L32 6L28 8L24 4Z" fill="none" stroke="#d4af37" strokeWidth="1.5" strokeLinejoin="round"/>
-            <path d="M24 12L20 28L24 42L28 28L24 12Z" fill="#d4af37" fillOpacity="0.15"/>
-            <path d="M18 2L20 6M30 2L28 6M24 0L24 4" stroke="#d4af37" strokeWidth="1" strokeLinecap="round" opacity="0.6"/>
-            <circle cx="24" cy="4" r="1.5" fill="#d4af37" opacity="0.8"/>
-          </svg>
-          {/* TEMPLATE: Replace with salon name */}
-          <span className={styles.logoText}>YOUR SALON NAME</span>
+        <Link href="/" className={styles.logo} aria-label="Studio Fix Home">
+          <div className={styles.customLogo}>
+            <span className={styles.customLogoTop}>BY TANVI SINGH</span>
+            <div className={styles.customLogoMain}>
+              STUDIO FIX
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: '-2px', transform: 'rotate(-45deg)' }}>
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <span className={styles.customLogoBottom}>UNISEX SALON & MAKEUP</span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
@@ -59,6 +85,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className={`${styles.navLink} ${isActive(link.href) ? styles.navLinkActive : ''}`}
+              onClick={(e) => handleNavClick(e, link.href)}
             >
               {link.label}
             </Link>
@@ -97,6 +124,7 @@ export default function Navbar() {
               href={link.href}
               className={`${styles.mobileLink} ${isActive(link.href) ? styles.mobileLinkActive : ''}`}
               style={{ animationDelay: `${i * 0.06}s` }}
+              onClick={(e) => handleNavClick(e, link.href)}
             >
               {link.label}
             </Link>
@@ -106,6 +134,12 @@ export default function Navbar() {
           </Link>
         </nav>
       </div>
+      {/* Transition Overlay */}
+      {isTransitioning && (
+        <div className={styles.transitionWrap}>
+          <div className={styles.transitionCircle}></div>
+        </div>
+      )}
     </header>
   );
 }

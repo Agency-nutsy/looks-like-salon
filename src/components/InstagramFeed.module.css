@@ -2,6 +2,33 @@
   background: var(--color-bg);
 }
 
+.reelsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+}
+
+.reelWrap {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background: white;
+  transition: transform var(--transition);
+}
+
+.reelWrap:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.reelIframe {
+  border: none;
+  background: white;
+  border-radius: 12px;
+  display: block;
+}
+
 .ctaWrap {
   text-align: center;
   margin-top: var(--space-8);

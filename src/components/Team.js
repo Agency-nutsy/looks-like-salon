@@ -1,34 +1,43 @@
 'use client';
 import styles from './Team.module.css';
 
-/* TEMPLATE: Replace with actual team data */
+/* Team members extracted from Google reviews */
 const team = [
   {
-    name: 'Stylist Name',
-    role: 'Senior Stylist',
-    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
-    bio: 'Lead stylist celebrated for precision haircuts, creative styling, and expert facials. Calm professionalism and attention to detail.',
-    tags: ['✂️ Haircuts', '🎨 Colour'],
-    experience: '8 Years',
-    certifications: ["L'Oréal Certified", "Advanced Colour Specialist"],
+    name: 'Tanvi Singh',
+    role: 'Founder & Makeup Artist',
+    photo: '/salon/bridal-makeup.png',
+    bio: 'Founder of Studio Fix, Tanvi is celebrated for her bridal artistry. Clients praise her ability to deliver exactly the look they envision — natural, elegant, and picture-perfect.',
+    tags: ['👰 Bridal Makeup', '💄 Party Makeup'],
+    experience: 'Founder',
+    certifications: ["Bridal Specialist", "Makeup Artist"],
   },
   {
-    name: 'Stylist Name',
-    role: 'Hair Specialist',
-    photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80',
-    bio: 'Creative flair in colour transformations and keratin treatments. Delivers exactly what clients envision.',
-    tags: ['💇 Styling', '✨ Keratin'],
-    experience: '6 Years',
-    certifications: ["Schwarzkopf Trained", "Keratin Expert"],
+    name: 'David',
+    role: 'Senior Hair Stylist',
+    photo: '/salon/hair-styling.png',
+    bio: 'David is the go-to stylist at Studio Fix, known for precision cuts and subtle, soft hair makeovers. Reviewers consistently highlight his skill and friendly demeanour.',
+    tags: ['✂️ Haircuts', '🎨 Hair Makeover'],
+    experience: 'Senior Stylist',
+    certifications: ["Hair Colour Expert", "Styling Specialist"],
   },
   {
-    name: 'Stylist Name',
-    role: 'Beauty Expert',
-    photo: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80',
-    bio: 'Skincare and makeup specialist known for flawless bridal looks and rejuvenating facials. Gentle approach and keen eye.',
-    tags: ['👰 Bridal', '🧖 Facials'],
-    experience: '5 Years',
-    certifications: ["Bridal Certified", "Skincare Specialist"],
+    name: 'Rajesh',
+    role: 'Spa & Pedicure Expert',
+    photo: '/salon/pedicure-service.png',
+    bio: 'Rajesh is praised by clients for his meticulous pedicure technique and attention to detail. Multiple reviewers call his work "superb" and say he has "magic in his hands."',
+    tags: ['🦶 Pedicure', '💆 Foot Massage'],
+    experience: 'Specialist',
+    certifications: ["Spa Treatment Expert"],
+  },
+  {
+    name: 'Gazal',
+    role: 'Skincare Specialist',
+    photo: '/salon/facial-treatment.png',
+    bio: 'Sweet, friendly, and highly skilled — Gazal is loved by clients for her beautiful facials and relaxing skincare treatments that leave you feeling refreshed.',
+    tags: ['🧖 Facials', '✨ Skincare'],
+    experience: 'Specialist',
+    certifications: ["Facial Expert", "Skincare Specialist"],
   },
 ];
 
@@ -47,7 +56,7 @@ export default function Team() {
               <div className={styles.imageWrap}>
                 <img
                   src={member.photo}
-                  alt={`${member.name} — ${member.role}`}
+                  alt={`${member.name} — ${member.role} at Studio Fix, Delhi`}
                   width={400}
                   height={500}
                   loading="lazy"
@@ -86,7 +95,7 @@ export default function Team() {
 
                 {/* Book with this stylist CTA */}
                 <a
-                  href={`https://wa.me/+91XXXXXXXXXX?text=${encodeURIComponent(`Hi! I'd like to book an appointment with ${member.name} (${member.role}).`)}`}
+                  href={`https://wa.me/917042044784?text=${encodeURIComponent(`Hi! I'd like to book an appointment with ${member.name} (${member.role}) at Studio Fix.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.bookStylistBtn}

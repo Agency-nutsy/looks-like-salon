@@ -42,8 +42,20 @@ export default function LoadingScreen() {
           <span className={`${styles.glitter} ${styles.g4}`}>✨</span>
         </div>
         
-        {/* TEMPLATE: Replace with salon name */}
-        <h1 className={styles.text}>Your Salon Name</h1>
+        <div className={styles.customLogo}>
+          <span className={styles.customLogoTop}>BY TANVI SINGH</span>
+          <div className={styles.customLogoMain}>
+            STUDIO FIX
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: '-4px', transform: 'rotate(-45deg)' }}>
+              <circle cx="6" cy="6" r="3"></circle>
+              <circle cx="6" cy="18" r="3"></circle>
+              <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+              <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+              <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <span className={styles.customLogoBottom}>UNISEX SALON & MAKEUP</span>
+        </div>
         
         <div className={styles.progressWrap}>
           <div className={styles.progressBar}></div>

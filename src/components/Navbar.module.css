@@ -261,3 +261,71 @@
     height: 28px;
   }
 }
+
+/* Custom Typographic Logo */
+.customLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-gold);
+  line-height: 1;
+}
+
+.customLogoTop {
+  font-size: 0.35rem;
+  letter-spacing: 0.25em;
+  font-weight: 500;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.customLogoMain {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--color-gold);
+}
+
+.customLogoBottom {
+  font-size: 0.3rem;
+  letter-spacing: 0.25em;
+  font-weight: 500;
+  margin-top: 4px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* Transition Overlay */
+.transitionWrap {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transitionCircle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 150vmax var(--color-bg);
+  animation: circleRevealFast 1.2s cubic-bezier(0.8, 0, 0.2, 1) forwards;
+}
+
+@keyframes circleRevealFast {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 200vmax;
+    height: 200vmax;
+  }
+}

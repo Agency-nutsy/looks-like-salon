@@ -11,12 +11,11 @@ const quickLinks = [
   { label: 'Contact', href: '/contact' },
 ];
 
-/* TEMPLATE: Replace with actual trust signals */
 const trustSignals = [
-  { icon: '⭐', text: '4.9★ Google Rating' },
-  { icon: '📝', text: '100+ Reviews' },
-  { icon: '🏆', text: "L'Oréal Partner Salon" },
-  { icon: '🎖️', text: '10+ Years Experience' },
+  { icon: '⭐', text: '4.4★ Google Rating' },
+  { icon: '📝', text: '262+ Reviews' },
+  { icon: '💇', text: 'Unisex Salon & Makeup' },
+  { icon: '♿', text: 'Wheelchair Accessible' },
 ];
 
 export default function Footer() {
@@ -32,21 +31,17 @@ export default function Footer() {
                 <path d="M24 12L20 28L24 42L28 28L24 12Z" fill="currentColor" fillOpacity="0.15"/>
                 <circle cx="24" cy="4" r="1.5" fill="currentColor" opacity="0.8"/>
               </svg>
-              {/* TEMPLATE: Replace with salon name */}
-              <span>YOUR SALON NAME</span>
+              <span>STUDIO FIX</span>
             </Link>
-            {/* TEMPLATE: Replace with salon tagline */}
-            <p className={styles.tagline}>Trendsetting Looks, Premium Care.</p>
+            <p className={styles.tagline}>Luxury Hair, Makeup & Beauty Redefined.</p>
             <p className={styles.blurb}>
-              {/* TEMPLATE: Replace with salon description */}
-              Your city&apos;s top-rated unisex salon. Expert stylists, professional products,
-              and a welcoming space for everyone.
+              Delhi&apos;s trusted unisex salon by Tanvi Singh. Expert stylists, premium services,
+              and a warm, welcoming space for everyone.
             </p>
             <div className={styles.socials}>
-              {/* TEMPLATE: Replace social links */}
-              <a href="https://www.instagram.com/your_salon/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.socialIcon}>📷</a>
-              <a href="https://wa.me/+91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className={styles.socialIcon}>💬</a>
-              <a href="https://www.google.com/maps/search/Your+Salon" target="_blank" rel="noopener noreferrer" aria-label="Google Maps" className={styles.socialIcon}>📍</a>
+              <a href="https://www.instagram.com/studiofixdelhi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.socialIcon}>📷</a>
+              <a href="https://wa.me/917042044784" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className={styles.socialIcon}>💬</a>
+              <a href="https://maps.app.goo.gl/WP7A4nYDrUAq3Aa58" target="_blank" rel="noopener noreferrer" aria-label="Google Maps" className={styles.socialIcon}>📍</a>
             </div>
           </div>
 
@@ -62,7 +57,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3 — Trust Signals (replaced Services column) */}
+          {/* Col 3 — Trust Signals */}
           <div className={styles.col}>
             <h4 className={styles.colTitle}>Why Choose Us</h4>
             <div className={styles.trustList}>
@@ -79,15 +74,12 @@ export default function Footer() {
           <div className={styles.col}>
             <h4 className={styles.colTitle}>Contact Info</h4>
             <div className={styles.contactInfo}>
-              {/* TEMPLATE: Replace with salon address */}
-              <p>📍 Your Full Address Here</p>
-              {/* TEMPLATE: Replace with salon phone */}
-              <p><a href="tel:+91XXXXXXXXXX">📞 +91 XXXXX XXXXX</a></p>
-              {/* TEMPLATE: Replace with salon hours */}
-              <p>🕐 8:30 AM – 9:00 PM (All Days)</p>
+              <p>📍 E-33, Amar Colony, 1st Floor, Above Dominos, Delhi 110024</p>
+              <p><a href="tel:+917042044784">📞 +91 70420 44784</a></p>
+              <p>🕐 10:30 AM – 9:00 PM (All Days)</p>
             </div>
             <a
-              href="https://wa.me/+91XXXXXXXXXX?text=Hi%2C%20I%20want%20to%20book%20an%20appointment"
+              href="https://wa.me/917042044784?text=Hi%2C%20I%20want%20to%20book%20an%20appointment"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp"
@@ -101,8 +93,7 @@ export default function Footer() {
         <hr className="gold-line" style={{ margin: 'var(--space-10) 0 var(--space-6)' }} />
 
         <div className={styles.bottom}>
-          {/* TEMPLATE: Replace with salon name and owner */}
-          <p>© {new Date().getFullYear()} Your Salon Name. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Studio Fix by Tanvi Singh. All rights reserved.</p>
         </div>
       </div>
     </footer>

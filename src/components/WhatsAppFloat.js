@@ -13,11 +13,11 @@ export default function WhatsAppFloat() {
   return (
     <div className="floating-widgets">
       <a
-        href="https://www.google.com/maps/search/Your+Salon+Name+Location"
+        href="https://maps.app.goo.gl/WP7A4nYDrUAq3Aa58"
         target="_blank"
         rel="noopener noreferrer"
         className="direction-float"
-        aria-label="Get Directions"
+        aria-label="Get Directions to Studio Fix"
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -26,7 +26,7 @@ export default function WhatsAppFloat() {
       </a>
 
       <a
-        href="https://wa.me/+91XXXXXXXXXX?text=Hi%2C%20I%20want%20to%20book%20an%20appointment"
+        href="https://wa.me/917042044784?text=Hi%2C%20I%20want%20to%20book%20an%20appointment"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float"
