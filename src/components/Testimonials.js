@@ -3,35 +3,65 @@ import styles from './Testimonials.module.css';
 
 const reviews = [
   {
-    text: "Studiofix is my go to salon place for whenever I need to get anything done, ranging from my bridal makeup to everyday stuff and most recently my hair make over. David pulled off the exact subtle soft look that I had wanted! 🥰 Great team, especially David.. The super helpful and friendly team makes me come here every time!",
-    name: 'Priyanka Arora',
-    service: 'Bridal Makeup + Hair Makeover',
+    text: "I always have an amazing experience at this salon. I recently got hair botox treatment done here right before my birthday, and I am extremely happy with the results. The treatment was done beautifully... Highly recommend this place to anyone looking for quality service, great staff, and a truly relaxing experience.",
+    name: 'Chamundeswari Pemmasani',
+    service: 'Hair Botox Treatment',
     stars: 5,
   },
   {
-    text: "I had a wonderful experience at Studio Fix Salon. Their services are truly excellent, and the staff is very professional. Rajesh did my pedicure, and I must say he is extremely skilled. He truly has magic in his hands and pays great attention to detail. Gazal is very sweet and friendly. She did my facial beautifully, and it was such a relaxing and refreshing experience. Highly recommended for anyone looking for quality services and a professional yet warm atmosphere.",
-    name: 'Pratiksha Yadav',
-    service: 'Pedicure + Facial',
+    text: "Got my haircut here today and absolutely loved it! The hairstylist - Rishi was super sweet and made sure I was comfortable the whole time. He asked exactly how short I wanted it and kept checking if I liked the length. The final look turned out even better than I imagined — light, bouncy, and neatly shaped. Totally worth it!",
+    name: 'Sneha Gupta',
+    service: 'Haircut',
     stars: 5,
   },
   {
-    text: "Just finished doing a pedicure, superb service, meticulously done process in a relaxed ambience. Special thanks to Rajesh for a wonderful pedicure! Please keep up the good work !",
-    name: 'Indrani Varma',
-    service: 'Pedicure',
+    text: "Service at the Looks like at Lajpat nagar is full of satisfaction. The hair spa and facial experience with dev and kajal was amazing. He is very kind & gentle and makes sure that you are comfortable throughout the service... Would definitely visit here again :)",
+    name: 'Shruti Singh Chauhan',
+    service: 'Hair Spa & Facial',
     stars: 5,
   },
   {
-    text: "Tanvi is an amazing makeup artist. I booked her for my wedding makeup and she really lived upto to my expectations. I clearly mentioned that I wanted to look all natural in my wedding and she made sure to incorporate every little request that I had. Keep up the good work!!",
-    name: 'Shweta Jain',
-    service: 'Bridal Makeup',
+    text: "Absolutely amazing service by the team.. Azhar is a very talented , extremely accomodative.. gave a very nice haircut and treatment. The girl who is managing, Kajal is very sweet, patient and has a great knowledge of the services they are offering... all in all a must visit salon..",
+    name: 'Mehr Singhania',
+    service: 'Haircut & Treatment',
     stars: 5,
   },
   {
-    text: "The service was excellent, and they paid attention to every small detail. You can truly see their dedication and passion for their work. I highly recommend this salon to anyone looking not just for great service, but also for a genuinely pleasant and respectful environment.",
-    name: 'Aditi Saini',
-    service: '',
+    text: "I had an amazing experience getting my nail extensions done here! The service was top-notch, and the staff were so professional and friendly. The salon’s ambiance is relaxing and elegant totally worth every penny!",
+    name: 'Isha Kaushik',
+    service: 'Nail Extensions',
     stars: 5,
   },
+  {
+    text: "This is a very good salon; I went there for hair coloring, and everything was done professionally and wonderfully. The stylists are true professionals, they styled my hair and took all my wishes into account. Thank you to the stylists named Kajal and Azhar!",
+    name: 'Anastasia Androsova',
+    service: 'Hair Coloring',
+    stars: 5,
+  },
+  {
+    text: "I visited for a haircut there.... Staff is very cooperating and experienced. I had a really awesome experience and quite happy with the services",
+    name: 'DIVYA JAIN',
+    service: 'Haircut',
+    stars: 5,
+  },
+  {
+    text: "I recently visited looks salon for a haircut and had a really good experience. The staff was professional and made me feel comfortable. The haircut turned out great, exactly how I wanted. Also, the prices are quite budget-friendly. Overall, a nice place for a good service",
+    name: 'Devika Yadav',
+    service: 'Haircut',
+    stars: 5,
+  },
+  {
+    text: "I got my hairs coloured here. And the results after getting it done with they styling looked absolute amazing. The staff was also extremely friendly. Would definitely recommend !!",
+    name: 'Ayushi Gautam',
+    service: 'Hair Coloring',
+    stars: 5,
+  },
+  {
+    text: "I had a great experience at The Looks Like hair salon. Mohammed Azhar did an amazing job of colour peek a boo and highlights.\n\nThank you",
+    name: 'sandra running',
+    service: 'Highlights',
+    stars: 5,
+  }
 ];
 
 // Duplicate reviews to create a seamless infinite loop
@@ -46,7 +76,7 @@ export default function Testimonials() {
         <div className={styles.headerRow} data-aos="fade-up">
           <div className={styles.headerLeft}>
             <span className="section-label">WHAT CLIENTS SAY</span>
-            <h2 className="section-title">262 Reasons to <span className="gold-text">Trust</span> Us</h2>
+            <h2 className="section-title">600+ Reasons to <span className="gold-text">Trust</span> Us</h2>
           </div>
         </div>
 
@@ -74,11 +104,11 @@ export default function Testimonials() {
         <div className={styles.googleBar} data-aos="fade-up">
           <div className={styles.googleRating}>
             <span className={styles.googleStar}>⭐</span>
-            <span className={styles.googleScore}>4.4 / 5 on Google</span>
-            <span className={styles.googleCount}>Based on 262 reviews</span>
+            <span className={styles.googleScore}>4.9 / 5 on Google</span>
+            <span className={styles.googleCount}>Based on 600+ reviews</span>
           </div>
           <a
-            href="https://maps.app.goo.gl/WP7A4nYDrUAq3Aa58"
+            href="https://maps.app.goo.gl/5LeB5MJ12KSX8Gx87"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline"

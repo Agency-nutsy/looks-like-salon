@@ -61,21 +61,8 @@ export default function Navbar() {
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.inner}>
         {/* Logo */}
-        <Link href="/" className={styles.logo} aria-label="Studio Fix Home">
-          <div className={styles.customLogo}>
-            <span className={styles.customLogoTop}>BY TANVI SINGH</span>
-            <div className={styles.customLogoMain}>
-              STUDIO FIX
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: '-2px', transform: 'rotate(-45deg)' }}>
-                <circle cx="6" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
-                <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
-                <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
-              </svg>
-            </div>
-            <span className={styles.customLogoBottom}>UNISEX SALON & MAKEUP</span>
-          </div>
+        <Link href="/" className={styles.logo} aria-label="The Looks Like Home">
+          <img src="/salon/looks-like-logo.png" alt="The Looks Like Logo" style={{ height: '70px', width: 'auto' }} />
         </Link>
 
         {/* Desktop Nav */}

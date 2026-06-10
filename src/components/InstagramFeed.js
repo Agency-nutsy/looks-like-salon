@@ -2,10 +2,10 @@
 import styles from './InstagramFeed.module.css';
 
 const reels = [
-  'C8J661Fv18o', // Makeup look
-  'C8J9EQ8Pp3N', // Makeup look
-  'C8Mo2BivXZT', // Transformation
-  'DZPtDVJo2km'  // Salon work
+  'DZO1sT2h_Id',
+  'DZLHPwxhn2P',
+  'DW4S4yAgWyw',
+  'DYoC14hhKsd'
 ];
 
 export default function InstagramFeed() {
@@ -37,12 +37,12 @@ export default function InstagramFeed() {
 
         <div className={styles.ctaWrap} data-aos="fade-up">
           <a
-            href="https://www.instagram.com/studiofixdelhi/"
+            href="https://www.instagram.com/thelookslike/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline"
           >
-            📷 Follow @studiofixdelhi
+            📷 Follow @thelookslike
           </a>
         </div>
       </div>

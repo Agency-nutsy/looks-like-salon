@@ -7,23 +7,23 @@ import WhatsAppFloat from '@/components/WhatsAppFloat';
 import LoadingScreen from '@/components/LoadingScreen';
 
 /* ============================================
-   STUDIO FIX UNISEX SALON & MAKEUP — by Tanvi Singh
+   THE LOOKS LIKE — UNISEX SALON & ACADEMY
    ============================================ */
-const SALON_NAME = 'Studio Fix';
-const SALON_TAGLINE = 'Luxury Hair, Makeup & Beauty Redefined';
+const SALON_NAME = 'The Looks Like';
+const SALON_TAGLINE = 'Unisex Salon & Academy — Lajpat Nagar';
 const SALON_PHONE = '+91 70420 44784';
 const SALON_PHONE_RAW = '+917042044784';
-const SALON_DOMAIN = 'https://studiofixsalon.com';
-const SALON_ADDRESS = 'E-33, Amar Colony, 1st Floor, Above Dominos';
+const SALON_DOMAIN = 'https://thelookslike.com';
+const SALON_ADDRESS = 'Lajpat Nagar, New Delhi';
 const SALON_CITY = 'Delhi';
 const SALON_STATE = 'Delhi';
 const SALON_PIN = '110024';
-const SALON_RATING = '4.4';
-const SALON_REVIEW_COUNT = '262';
+const SALON_RATING = '4.9';
+const SALON_REVIEW_COUNT = '600';
 const SALON_HOURS = 'Mo-Su 10:30-21:00';
-const SALON_OWNER = 'Tanvi Singh';
-const SALON_INSTAGRAM = 'https://www.instagram.com/studiofixdelhi/';
-const SALON_GOOGLE_MAPS = 'https://maps.app.goo.gl/WP7A4nYDrUAq3Aa58';
+const SALON_OWNER = 'The Looks Like';
+const SALON_INSTAGRAM = 'https://www.instagram.com/thelookslike/';
+const SALON_GOOGLE_MAPS = 'https://maps.app.goo.gl/5LeB5MJ12KSX8Gx87';
 /* ============================================ */
 
 export const metadata = {

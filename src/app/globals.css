@@ -1,37 +1,38 @@
 /* ============================================
-   STUDIO FIX SALON — GLOBAL DESIGN SYSTEM
-   Charcoal + Gold Luxury Aesthetic
-   Palette: #1A1A1A · #D4AF37 · #F5F0EB
+   THE LOOKS LIKE — SALON & ACADEMY
+   Rose Pink · Purple · Warm Brown Palette
+   Palette: #D4708F · #8B5E8B · #3D2A20 · #FCF0F4
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
-/* --- CSS Custom Properties — Charcoal + Gold Palette --- */
+/* --- CSS Custom Properties — Rose Pink & Purple Palette --- */
 :root {
-  --color-bg: #FAF8F5;
-  --color-surface: #F5F0EB;
-  --color-surface-2: #EDE8E2;
-  --color-surface-offset: #E5E0DA;
-  --color-border: rgba(212, 175, 55, 0.18);
-  --color-divider: rgba(212, 175, 55, 0.10);
+  --color-bg: #FCF0F4;
+  --color-surface: #F8E6EE;
+  --color-surface-2: #F0D4E0;
+  --color-surface-offset: #E6C0D0;
+  --color-border: rgba(212, 112, 143, 0.22);
+  --color-divider: rgba(212, 112, 143, 0.12);
 
-  --color-text: #1A1A1A;
-  --color-text-muted: #5C5C5C;
-  --color-text-faint: #9E9E9E;
+  --color-text: #3D2A20;
+  --color-text-muted: #6B4F45;
+  --color-text-faint: #A08A82;
 
-  /* Primary accent — true gold */
-  --color-gold: #D4AF37;
-  --color-gold-light: #E0C35A;
-  --color-gold-dim: rgba(212, 175, 55, 0.12);
-  --color-gold-glow: rgba(212, 175, 55, 0.20);
+  /* Primary accent — rose pink (from salon walls & chairs) */
+  --color-gold: #D4708F;
+  --color-gold-light: #E08EA8;
+  --color-gold-dim: rgba(212, 112, 143, 0.15);
+  --color-gold-glow: rgba(212, 112, 143, 0.25);
 
-  /* Secondary accent — warm cream */
-  --color-nude: #F0E6D6;
-  --color-nude-light: #F8F2E8;
-  --color-nude-dark: #DDD0BC;
+  /* Secondary accent — mauve purple (from tufted wall panels) */
+  --color-nude: #B889A8;
+  --color-nude-light: #E8D0DE;
+  --color-nude-dark: #8B5E8B;
+  --color-purple: #8B5E8B;
 
   --color-white: #ffffff;
-  --color-marble: #F5F0EB;
+  --color-marble: #F8E6EE;
 
   --font-display: 'Playfair Display', serif;
   --font-body: 'Inter', -apple-system, sans-serif;
@@ -62,7 +63,7 @@
   --radius-lg: 0.75rem;
   --radius-xl: 1.25rem;
 
-  --shadow-gold: 0 4px 24px rgba(212, 175, 55, 0.18);
+  --shadow-gold: 0 4px 24px rgba(212, 112, 143, 0.22);
   --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
   --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
 
@@ -257,9 +258,9 @@ input, select, textarea {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(248,213,196,0.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(240,243,255,0.2) 0%, transparent 50%),
-    radial-gradient(ellipse at 60% 80%, rgba(160,120,90,0.06) 0%, transparent 40%);
+    radial-gradient(ellipse at 20% 50%, rgba(212,112,143,0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(139,94,139,0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, rgba(184,137,168,0.08) 0%, transparent 40%);
   pointer-events: none;
   z-index: 0;
 }
@@ -268,8 +269,8 @@ input, select, textarea {
 .ribbed-bg {
   background-image: repeating-linear-gradient(
     90deg,
-    rgba(160,120,90,0.03) 0px,
-    rgba(160,120,90,0.03) 1px,
+    rgba(212,112,143,0.04) 0px,
+    rgba(212,112,143,0.04) 1px,
     transparent 1px,
     transparent 40px
   );
@@ -937,7 +938,7 @@ input, select, textarea {
 .insta-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(160, 120, 90, 0.5);
+  background: rgba(212, 112, 143, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;

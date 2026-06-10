@@ -149,6 +149,7 @@
   position: relative;
   width: 100%;
   height: 600px;
+  margin-top: 40px;
 }
 
 .imageGrid {
@@ -194,8 +195,8 @@
 
 .imgWrap img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
 }
@@ -207,8 +208,8 @@
 /* 1. Main Large Image */
 .imgMain {
   width: 60%;
-  height: auto;
-  top: 20%;
+  aspect-ratio: 4/5;
+  top: 15%;
   left: 5%;
   z-index: 2;
   animation-delay: 0.4s;
@@ -217,8 +218,8 @@
 /* 2. Top Right Accent Image */
 .imgTopRight {
   width: 45%;
-  height: auto;
-  top: 5%;
+  aspect-ratio: 3/4;
+  top: 0%;
   right: 5%;
   z-index: 1;
   animation-delay: 0.6s;
@@ -227,7 +228,7 @@
 /* 3. Bottom Left Accent Image */
 .imgBottomLeft {
   width: 50%;
-  height: auto;
+  aspect-ratio: 1/1;
   top: 55%;
   right: 15%;
   z-index: 3;

@@ -71,7 +71,7 @@ export default function Hero() {
           <div className={styles.left}>
             <div className={styles.locationLabel}>
               <span className={styles.goldLine}></span>
-              ✦ AMAR COLONY, DELHI
+              ✦ LAJPAT NAGAR, DELHI
             </div>
 
             <h1 className={styles.heading}>
@@ -84,7 +84,7 @@ export default function Hero() {
             </h1>
 
             <p className={styles.subtitle}>
-              Step into Studio Fix by Tanvi Singh — where luxury meets precision. From stunning bridal transformations to expert hair makeovers, we craft bespoke beauty experiences that reveal the most confident you.
+              Step into The Looks Like Unisex Salon & Academy — where luxury meets precision. From stunning bridal transformations to expert hair makeovers, we craft bespoke beauty experiences that reveal the most confident you.
             </p>
 
             <div className={styles.ctas}>
@@ -105,17 +105,17 @@ export default function Hero() {
             {/* Trust Stats */}
             <div className={styles.stats} ref={statsRef}>
               <div className={styles.stat}>
-                <span className="counter-value" data-target="4.4" data-suffix="">{mounted ? '0' : '4.4'}</span>
+                <span className="counter-value" data-target="4.9" data-suffix="">{mounted ? '0' : '4.9'}</span>
                 <span className="counter-label">Google Rating</span>
               </div>
               <div className={styles.statDivider}></div>
               <div className={styles.stat}>
-                <span className="counter-value" data-target="262" data-suffix="+">{mounted ? '0' : '262+'}</span>
+                <span className="counter-value" data-target="600" data-suffix="+">{mounted ? '0' : '600+'}</span>
                 <span className="counter-label">Google Reviews</span>
               </div>
               <div className={styles.statDivider}></div>
               <div className={styles.stat}>
-                <span className="counter-value" data-target="5" data-suffix="+">{mounted ? '0' : '5+'}</span>
+                <span className="counter-value" data-target="10" data-suffix="+">{mounted ? '0' : '10+'}</span>
                 <span className="counter-label">Years Exp.</span>
               </div>
             </div>
@@ -129,8 +129,8 @@ export default function Hero() {
               
               <div className={`${styles.imgWrap} ${styles.imgMain}`}>
                 <img
-                  src="/salon/reception-desk.jpg"
-                  alt="Studio Fix reception area with crystal chandelier and marble desk in Amar Colony, Delhi"
+                  src="/salon/hero-bride.jpg"
+                  alt="Beautiful bridal makeup at The Looks Like, Lajpat Nagar"
                   loading="eager"
                   decoding="async"
                 />
@@ -138,8 +138,8 @@ export default function Hero() {
               
               <div className={`${styles.imgWrap} ${styles.imgTopRight}`}>
                 <img
-                  src="/salon/styling-stations.png"
-                  alt="Professional styling stations with gold-framed mirrors at Studio Fix, Delhi"
+                  src="/salon/hero-hair.png"
+                  alt="Premium hair coloring and styling at The Looks Like"
                   loading="lazy"
                   decoding="async"
                 />
@@ -147,8 +147,8 @@ export default function Hero() {
               
               <div className={`${styles.imgWrap} ${styles.imgBottomLeft}`}>
                 <img
-                  src="/salon/bridal-makeup.png"
-                  alt="Bridal makeup session at Studio Fix by Tanvi Singh, Delhi"
+                  src="/salon/hero-nails.png"
+                  alt="Intricate bridal mehndi and nail extensions at The Looks Like"
                   loading="lazy"
                   decoding="async"
                 />
