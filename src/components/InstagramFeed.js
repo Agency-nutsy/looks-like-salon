@@ -37,7 +37,7 @@ export default function InstagramFeed() {
 
         <div className={styles.ctaWrap} data-aos="fade-up">
           <a
-            href="https://www.instagram.com/thelookslike/"
+            href="https://www.instagram.com/thelooks_likeunisexsalon/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline"

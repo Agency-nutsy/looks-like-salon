@@ -22,7 +22,7 @@ const SALON_RATING = '4.9';
 const SALON_REVIEW_COUNT = '600';
 const SALON_HOURS = 'Mo-Su 10:30-21:00';
 const SALON_OWNER = 'The Looks Like';
-const SALON_INSTAGRAM = 'https://www.instagram.com/thelookslike/';
+const SALON_INSTAGRAM = 'https://www.instagram.com/thelooks_likeunisexsalon/';
 const SALON_GOOGLE_MAPS = 'https://maps.app.goo.gl/5LeB5MJ12KSX8Gx87';
 /* ============================================ */
 

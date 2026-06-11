@@ -66,8 +66,8 @@ export default function Contact() {
 
           {/* Social Links */}
           <div className={styles.socials}>
-            <a href="https://www.instagram.com/studiofixdelhi/" target="_blank" rel="noopener noreferrer" className={styles.socialPill}>
-              📷 @studiofixdelhi
+            <a href="https://www.instagram.com/thelooks_likeunisexsalon/" target="_blank" rel="noopener noreferrer" className={styles.socialPill}>
+              📷 @thelooks_likeunisexsalon
             </a>
             <a href="https://wa.me/917042044784" target="_blank" rel="noopener noreferrer" className={styles.socialPill}>
               💬 WhatsApp

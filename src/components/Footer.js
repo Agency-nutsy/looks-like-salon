@@ -39,7 +39,7 @@ export default function Footer() {
               and a warm, welcoming space for everyone.
             </p>
             <div className={styles.socials}>
-              <a href="https://www.instagram.com/thelookslike/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.socialIcon}>📷</a>
+              <a href="https://www.instagram.com/thelooks_likeunisexsalon/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.socialIcon}>📷</a>
               <a href="https://wa.me/917042044784" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className={styles.socialIcon}>💬</a>
               <a href="https://maps.app.goo.gl/5LeB5MJ12KSX8Gx87" target="_blank" rel="noopener noreferrer" aria-label="Google Maps" className={styles.socialIcon}>📍</a>
             </div>
