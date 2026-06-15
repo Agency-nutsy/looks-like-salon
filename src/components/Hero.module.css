@@ -149,7 +149,6 @@
   position: relative;
   width: 100%;
   height: 600px;
-  margin-top: 40px;
 }
 
 .imageGrid {
@@ -164,9 +163,9 @@
   right: 10%;
   width: 300px;
   height: 300px;
-  background: var(--color-gold);
-  filter: blur(100px);
-  opacity: 0.15;
+  background: #d81b60; /* Dark pink */
+  filter: blur(80px);
+  opacity: 0.6;
   border-radius: 50%;
   animation: float 8s ease-in-out infinite;
 }
@@ -177,9 +176,9 @@
   left: 0;
   width: 250px;
   height: 250px;
-  background: var(--color-nude);
-  filter: blur(80px);
-  opacity: 0.3;
+  background: #ad1457; /* Dark pink */
+  filter: blur(70px);
+  opacity: 0.7;
   border-radius: 50%;
   animation: float 6s ease-in-out infinite alternate-reverse;
 }
@@ -188,9 +187,10 @@
   position: absolute;
   border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
   opacity: 0;
   animation: fadeUp 1s ease forwards;
+  aspect-ratio: 3 / 4;
 }
 
 .imgWrap img {
@@ -207,33 +207,32 @@
 
 /* 1. Main Large Image */
 .imgMain {
-  width: 60%;
-  aspect-ratio: 4/5;
-  top: 15%;
-  left: 5%;
-  z-index: 2;
-  animation-delay: 0.4s;
+  width: 50%;
+  height: auto;
+  top: 35%;
+  left: 25%;
+  z-index: 3;
+  animation-delay: 0.8s;
 }
 
 /* 2. Top Right Accent Image */
 .imgTopRight {
   width: 45%;
-  aspect-ratio: 3/4;
-  top: 0%;
-  right: 5%;
+  height: auto;
+  top: 10%;
+  right: 0%;
   z-index: 1;
   animation-delay: 0.6s;
 }
 
 /* 3. Bottom Left Accent Image */
 .imgBottomLeft {
-  width: 50%;
-  aspect-ratio: 1/1;
-  top: 55%;
-  right: 15%;
-  z-index: 3;
-  border: 6px solid var(--color-bg);
-  animation-delay: 0.8s;
+  width: 45%;
+  height: auto;
+  top: 15%;
+  left: -5%;
+  z-index: 2;
+  animation-delay: 0.4s;
 }
 
 /* Floating Badges */
@@ -262,14 +261,14 @@
 
 .floatingBadge1 {
   top: 25%;
-  left: -5%;
+  left: -15%;
   animation-delay: 1s;
   animation: float 4s ease-in-out infinite, fadeUp 1s ease forwards 1s;
 }
 
 .floatingBadge2 {
-  bottom: 20%;
-  right: -5%;
+  bottom: 15%;
+  right: 5%;
   animation-delay: 1.2s;
   animation: float 5s ease-in-out infinite alternate-reverse, fadeUp 1s ease forwards 1.2s;
 }
